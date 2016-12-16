@@ -1,0 +1,53 @@
+.main-head {
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 40px;
+  position: relative;
+  height: 800px;
+
+
+  box-shadow: black;
+  z-index: 1000;
+
+  .main-title {
+    top: 50px;
+    text-align: center;
+    position: relative;
+
+    .tagline {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include breakpoint($large) {
+      text-align: left;
+      top: 30%;
+      position: absolute;
+
+      .tagline {
+        margin: 0;
+      }
+    }
+  }
+
+  .left-section {
+    position: relative;
+  }
+
+  .right-section {
+    text-align: center;
+    position: relative;
+  }
+
+  img.header-image {
+    max-width: 300px;
+    position: relative;
+    bottom: -120px;
+  }
+
+  @include breakpoint($large) {
+    height: 100vh;
+  }
+}

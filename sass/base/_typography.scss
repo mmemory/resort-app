@@ -1,0 +1,45 @@
+//@import url('https://fonts.googleapis.com/css?family=Cabin:600|Montserrat|Roboto+Slab|Special+Elite|Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,900|Vollkorn:400,700');
+
+.main-title {
+
+  h1 {
+    font-family: $roboto;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 100px;
+
+    .tagline {
+      font-family: $volk;
+      font-size: 30px;
+      font-weight: 400;
+      max-width: 470px;
+      line-height: normal;
+      letter-spacing: 0;
+    }
+
+    @include breakpoint($large) {
+      font-size: 100px;
+
+      .tagline {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+h2 {
+  font-family: $roboto;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+p {
+  color: $copy;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: $volk;
+}

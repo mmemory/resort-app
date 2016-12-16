@@ -1,0 +1,70 @@
+<container class="main-wrapper" ng-class="{'mountain-container': (content.type === 'mountain'), 'beach-container': (content.type === 'beach')}">
+
+	<header class="main-head">
+		<div class="header-inner">
+
+			<div class="left-section">
+				<div class="main-title">
+					<h1>{{content.title}} <span class="tagline">{{content.subtitle}}</span></h1>
+				</div>
+			</div>
+			<div class="right-section">
+
+				<div ng-if="content.type === 'mountain'"><img class="header-image" ng-src="./assets/images/mountain_home.png" alt="ResortApp on an phone"></div>
+				<div ng-if="content.type === 'beach'"><img class="header-image" ng-src="./assets/images/beach_home_joe.png" alt="ResortApp on an phone"></div>
+
+			</div>
+
+		</div>
+	</header>
+
+	<main class="main-content">
+
+			<section class="intro-content">
+				<div class="main-inner">
+
+					<h2>Introducing ResortApp</h2>
+					<p>{{content.intro}}</p>
+
+				</div>
+			</section>
+
+			<section class="deals-content content-container">
+				<div class="main-inner">
+					<div class="left-section copy-section">
+
+						<h2>Deals</h2>
+						<p>A list of the best deals in town. From entree deals to drink specials, you are sure to find something great.</p>
+
+					</div>
+					<div class="right-section image-container">
+
+						<div ng-if="content.type === 'mountain'"><img class="content-image content-right" ng-src="./assets/images/mountain_deals.png" alt="ResortApp on an phone"></div>
+						<div ng-if="content.type === 'beach'"><img class="content-image content-right" ng-src="./assets/images/beach_deals.png" alt="ResortApp on an phone"></div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="restaurants-content content-container">
+
+				<div class="main-inner">
+					<div class="right-section copy-section">
+
+						<h2>Restaurants</h2>
+						<p>Our dining guide shows great restaurants around you. Easily find and make reservations at the best local spots.</p>
+
+					</div>
+					<div class="left-section image-container">
+
+						<div ng-if="content.type === 'mountain'"><img class="content-image content-left" src="./assets/images/mountain_restaurant.png" alt="ResortApp on an phone"></div>
+						<div ng-if="content.type === 'beach'"><img class="content-image content-left" src="./assets/images/beach_restaurant.png" alt="ResortApp on an phone"></div>
+
+					</div>
+				</div>
+			</section>
+	</main>
+
+	<footer class="main-footer"></footer>
+</container>
+

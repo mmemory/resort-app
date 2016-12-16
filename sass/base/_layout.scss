@@ -1,0 +1,41 @@
+.main-wrapper {
+
+  .main-head {
+
+
+    .header-inner {
+      height: 100%;
+    }
+
+    @include breakpoint($large) {
+      @include clearfix();
+
+      .left-section {
+        height: 100%;
+        @include grid-span(7, 1);
+      }
+
+      .right-section {
+        height: 100%;
+        @include grid-span(5, 8);
+      }
+    }
+  }
+
+  .content-container {
+
+    @include breakpoint($large) {
+      @include clearfix();
+      @include add-grid(12);
+      @include add-gutter(0);
+
+      .left-section {
+        @include grid-span(6, 1);
+      }
+
+      .right-section {
+        @include grid-span(6, 7);
+      }
+    }
+  }
+}

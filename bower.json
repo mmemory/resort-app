@@ -1,0 +1,21 @@
+{
+  "name": "resort-app",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Michael Memory <michaelmemoria@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "singularity": "^1.7.1",
+    "breakpoint-sass": "^2.7.1"
+  }
+}

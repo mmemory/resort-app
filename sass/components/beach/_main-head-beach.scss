@@ -1,0 +1,19 @@
+.beach-container {
+
+  .main-head {
+    background-image: url('../images/beach_main.jpeg');
+
+    .main-title {
+      //top: 40%;
+    }
+
+    .main-title h1 {
+      color: $white;
+
+      .tagline {
+        font-family: $roboto;
+        font-weight: 500;
+      }
+    }
+  }
+}

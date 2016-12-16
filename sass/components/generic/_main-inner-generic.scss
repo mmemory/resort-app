@@ -1,0 +1,14 @@
+.main-inner {
+  padding: 0 40px;
+  width: 100%;
+
+  @include breakpoint($medium) {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @include breakpoint($large) {
+    width: 80%;
+    max-width: 1080px;
+  }
+}
