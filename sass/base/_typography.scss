@@ -9,6 +9,7 @@
     font-weight: 900;
     letter-spacing: 3px;
     line-height: 100px;
+    color: $copy;
 
     .tagline {
       font-family: $volk;
@@ -35,6 +36,12 @@ h2 {
   font-size: 40px;
   margin-bottom: 40px;
   font-weight: 700;
+  color: $beach-light-blue;
+  line-height: 50px;
+}
+
+.gate h2 {
+  margin-bottom: 0;
 }
 
 p {
@@ -42,4 +49,16 @@ p {
   font-size: 25px;
   line-height: 35px;
   font-family: $volk;
+
+  .callout-copy {
+    font-weight: 700;
+  }
+}
+
+.gate p {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

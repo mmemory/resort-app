@@ -39,3 +39,21 @@
     }
   }
 }
+
+.decision-content {
+
+  @include breakpoint($medium-to-large) {
+    @include add-grid(2);
+    @include add-gutter(0);
+    @include clearfix();
+    width: 100%;
+
+    .left-section {
+      @include grid-span(1, 1);
+    }
+
+    .right-section {
+      @include grid-span(1, 2);
+    }
+  }
+}

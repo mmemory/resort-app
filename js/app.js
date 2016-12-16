@@ -7,12 +7,11 @@ angular.module('resortApp', ['ui.router'])
         .state('home', {
             url: '/',
             controller: 'mainCtrl',
-            templateUrl: './templates/home.html'
+            templateUrl: './templates/gate.html'
         })
         .state('resort', {
             url: '/:type',
             controller: 'mainCtrl',
             templateUrl: './templates/mountain-beach.html'
         });
-
 });

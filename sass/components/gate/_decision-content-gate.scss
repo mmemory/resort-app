@@ -1,0 +1,18 @@
+.decision-content {
+
+  .left-section,
+  .right-section {
+    text-align: center;
+    padding: 40px 0;
+    cursor: pointer;
+  }
+
+  .left-section {
+    background-color: $beach-light-blue;
+  }
+
+  .decision-image {
+    max-width: 300px;
+    cursor: pointer;
+  }
+}

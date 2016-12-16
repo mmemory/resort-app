@@ -1,4 +1,4 @@
-<container class="main-wrapper" ng-class="{'mountain-container': (content.type === 'mountain'), 'beach-container': (content.type === 'beach')}">
+<section class="main-wrapper" ng-class="{'mountain-container': (content.type === 'mountain'), 'beach-container': (content.type === 'beach')}">
 
 	<header class="main-head">
 		<div class="header-inner">
@@ -10,7 +10,7 @@
 			</div>
 			<div class="right-section">
 
-				<div ng-if="content.type === 'mountain'"><img class="header-image" ng-src="./assets/images/mountain_home.png" alt="ResortApp on an phone"></div>
+				<div ng-if="content.type === 'mountain'"><img class="header-image" ng-src="./assets/images/mountain_home_joe.png" alt="ResortApp on an phone"></div>
 				<div ng-if="content.type === 'beach'"><img class="header-image" ng-src="./assets/images/beach_home_joe.png" alt="ResortApp on an phone"></div>
 
 			</div>
@@ -66,5 +66,5 @@
 	</main>
 
 	<footer class="main-footer"></footer>
-</container>
+</section>
 
