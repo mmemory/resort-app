@@ -22,7 +22,12 @@
   }
 
   img.content-image {
+    width: 100%;
+  }
+
+  .image-container {
     max-width: 300px;
+    margin: 0 auto;
   }
 
   @include breakpoint($large) {
